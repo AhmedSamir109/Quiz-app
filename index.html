@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="images/depositphotos_62072697-stock-illustration-quiz-icon.jpg" type="image/x-icon">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="Style/all.min.css">
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    
+<Section class="d-flex flex-column justify-content-sm-start align-items-center min-vh-100">
+
+    <h1 class="bg-light  px-4 py-3 my-5 rounded-4 animate__animated animate__zoomIn"> Quiz App <i class="fa-solid fa-question"></i> </h1>
+
+   <div class="quiz-options w-55 py-5 px-4 animate__animated animate__fadeInBottomLeft  animate__delay-1s d-block bg-light  rounded-4">
+     <div class="form-floating mb-3">
+         <select class="form-select fw-semibold" id="categoryMenu" aria-label="Floating label select example">
+           <option selected disabled>Choose Category</option>
+                <option value="">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="27">Animals</option>
+                <option value="19">Science: Mathematics</option>
+                <option value="18">Science: Computers</option>
+                <option value="22">Geography</option>
+         </select>
+       </div>
+       
+       <div class="form-floating mb-3">
+         <select class="form-select fw-semibold" id="difficultyLevel" aria-label="Floating label select example">
+           <option selected disabled >Choose Difficulty Level</option>
+           <option value="easy">Easy</option>
+           <option value="medium">Medium</option>
+           <option value="hard">Hard</option>
+         </select>
+       </div>
+
+       <div class="form-floating mb-3">
+         <input type="email" class="form-control" id="questionsNum" placeholder="name@example.com">
+         <label for="floatingInput" class="fw-semibold">Numbers of Questions</label>
+       </div>
+
+       <button type="button" class="btn btn-primary  w-100 rounded-pill" id="StartBtn">Start</button>
+
+   </div>
+
+
+   <div class="questions-container w-55 pt-5 animate__animated animate__bounceIn d-block">
+
+   </div>
+
+</Section>
+
+
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js" type="module"></script>
+</body>
+</html>
